@@ -17,6 +17,7 @@
     // sử dụng display: flex cho thẻ cha
     // set margin: auto cho thẻ con muốn căn giữa
 
+- Căn phải icon: có thể sử dụng text-align: right 
 
 /*Căn giữa icon bằng transform*/
     position: absolute;

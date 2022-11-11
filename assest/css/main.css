@@ -572,7 +572,7 @@ h3.auto-form__heading {
 .header__cart-list-item{
     padding-left: 0;
     list-style: none;
-    height: 56vh;/*56% chiều cao của trình duyệt*/
+    max-height: 56vh;/*56% chiều cao của trình duyệt*/
     overflow-y: auto;
 }
 
@@ -894,6 +894,55 @@ h3.auto-form__heading {
     color: var(--text-color);
     line-height: 38px;
     display: block;
+}
+
+/* header sort bar */
+.header__sort-bar{
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header__sort-bar-height);
+    background-color: var(--white-color);
+    padding-left: 0;
+    margin-top: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+
+.header__sort-item{
+    flex: 1;
+    list-style: none;
+}
+
+.header__sort-link{
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    height: 100%;
+    line-height: var(--header__sort-bar-height); 
+    position: relative;  
+}
+
+.header__sort-link::before{
+    content: "";
+    position: absolute;
+    top: 50%; /*top: 50% là 50% của thẻ chứa nó*/
+    left: 0;
+    height: 60%;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);/*50% chiều cao của chính nó*/
+}
+
+.header__sort-item:first-child .header__sort-link::before{
+    display: none;
+}
+
+.header__sort-item--active{
+    color: var(--primary-color);
 }
 
 /* App container */
