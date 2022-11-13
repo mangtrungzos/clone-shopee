@@ -251,3 +251,6 @@
 
 # Column luôn luôn nằm trong row
 
+# Làm ô tìm kiếm dùng thẻ label
+
+# transition (-delay ,-duration ,-timing...) để khai báo animation sẽ hoạt động như thế nào (linear ,easer-in, easer-out...)
