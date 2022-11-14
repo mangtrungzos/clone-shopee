@@ -254,3 +254,6 @@
 # Làm ô tìm kiếm dùng thẻ label
 
 # transition (-delay ,-duration ,-timing...) để khai báo animation sẽ hoạt động như thế nào (linear ,easer-in, easer-out...)
+
+# Muốn hiển thị 5 sản phẩm trên cùng 1 hàng ngang ở trên mobile
+12 cột chia cho 5 sản phẩm : 12/5 = 2.4 thì 1 cột có tỉ lệ 2.4%

@@ -207,7 +207,7 @@ html{
 }
 
 .pagination-item{
-    margin: 0 12px;
+    margin: 0;
 }
 
 .pagination-item--active .pagination-item-link{
