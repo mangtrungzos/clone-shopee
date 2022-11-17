@@ -504,6 +504,7 @@ h3.auto-form__heading {
 
 .header__mobile-search{
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon{
@@ -1026,6 +1027,9 @@ h3.auto-form__heading {
 }
 
 /* Mobile category */
+.mobile-category{
+    display: none;
+}
 
 .mobile-category__list{
     display: flex;
@@ -1075,6 +1079,7 @@ h3.auto-form__heading {
     user-select: none;
     -webkit-user-select: none;    
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 
 

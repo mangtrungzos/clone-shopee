@@ -38,6 +38,9 @@
         color: var(--primary-color);
         border-bottom: 1px solid var(--primary-color);
     }
+    .mobile-category{
+        display: block;
+    }
 }
 
 /* Tablet */
@@ -90,6 +93,16 @@
         animation: mobileSearchSideIn linear .3s;
         display: none;
     }
+    @keyframes mobileSearchSideIn {
+        from{
+            top: calc((var(--header-height) - var(--navbar-height)) / 2);
+            opacity: 0;
+        }
+        to{
+            top: calc(var(--header-height) - var(--navbar-height));
+            opacity: 1;
+        }
+    }
     .header__search-history{
         position: fixed;
         width: 100%;
@@ -117,20 +130,24 @@
         margin: 0 4px;
 
     }
-    @keyframes mobileSearchSideIn {
-        from{
-            top: calc((var(--header-height) - var(--navbar-height)) / 2);
-            opacity: 0;
-        }
-        to{
-            top: calc(var(--header-height) - var(--navbar-height));
-            opacity: 1;
-        }
+    .header__mobile-search{
+        display: block;
+    }
+    .header__logo-img{
+        width: 110px;
+    }
+    .footer__content{
+        padding: 0 16px;
+    }
+    .policy-item__link{
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+    .policy-item{
+        padding: 0 7px;
     }
 }
 
 @media (min-width: 1024px){
-    .header__mobile-search{
-        display: none;
-    }
+    
 }
